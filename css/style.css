@@ -1,0 +1,132 @@
+:root{
+--Purple-100: hsl(254, 88%, 90%);
+--Purple-500: hsl(256, 67%, 59%);
+
+--Yellow-100: hsl(31, 66%, 93%);
+--Yellow-500: hsl(39, 100%, 71%);
+
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 7%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(241, 241, 241);
+}
+body p{
+font-size: 18px;
+line-height: 1;
+}
+.wrap-balance{
+ text-wrap:balance;
+
+}
+.dm-sans{
+    font-family: "DM Sans";
+   
+}
+.bg-purple-100{
+    background-color: var(--Purple-100);
+}
+.bg-purple-500{
+    background-color: var(--Purple-500);
+}
+.bg-Yellow-100{
+    background-color: var(--Yellow-100);
+}
+.bg-Yellow-500{
+    background-color: var(--Yellow-500);
+}
+.bg-white{
+    background-color: var(--White);
+}
+.bg-black{
+    background-color: var(--Black);
+}
+.font-xl{
+    font-size: xxx-large;
+}
+
+
+
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width:992px){
+  .hero-section{
+    display: grid !important;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,120px);
+    grid-template-areas: 
+    "div1 div2 div2 div3"
+    "div1 div2 div2 div3"
+    "div1 manage maintain div3"
+    "write manage maintain div3 "
+    "write faster grow grow"
+    "write faster grow grow"
+    ;
+    gap: 20px;
+    padding: 75px;
+    
+    
+}
+.hero-section div{
+    margin: 0 !important;
+    overflow: hidden;
+}
+.hero-section div:first-child{
+    grid-area: div2;
+
+   
+}
+.hero-section div:nth-child(1) img{
+    width: 50% !important;
+
+   
+}
+.hero-section div:nth-child(7){
+    grid-area: div1;
+  
+}
+.hero-section div:nth-child(4){
+    grid-area: div3;
+}  
+.hero-section div:nth-child(2){
+    grid-area: manage;
+}
+.hero-section div:nth-child(3){
+    grid-area: maintain;
+}
+.hero-section div:nth-child(3) img{
+    width: 100% !important;
+}
+.hero-section div:nth-child(8){
+    grid-area: write;
+    
+}
+.hero-section div:nth-child(5){
+    grid-area: grow;
+}
+.hero-section div:nth-child(5) img{
+   width: 45% !important;
+}
+.hero-section div:nth-child(5) p{
+    width: 55% !important;
+    text-align: left !important;
+    padding:5px;
+}
+.hero-section div:nth-child(6){
+    grid-area: faster;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero-section div img{
+width: 100% !important;
+}
+}
